@@ -11,28 +11,28 @@ h1 {
   color: darkblue;
 }
 
-about {
+.about {
   background-color: lightblue;
   font-family: "Arial", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-skills {
+.skills {
   background-color: lightgreen;
   font-family: "Courier New", monospace;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-projects {
+.projects {
   background-color: lightyellow;
   font-family: "Georgia", serif;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-contact {
+.contact {
   background-color: lightpink;
   font-family: "Times New Roman", serif;
   padding: 10px;
