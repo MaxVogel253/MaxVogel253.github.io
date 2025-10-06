@@ -1,8 +1,40 @@
 body {
-background: crimson;
+background: beige;
 font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
 color: coral;
 text-align: center;
+}
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+about {
+  background-color: lightblue;
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+skills {
+  background-color: lightgreen;
+  font-family: "Courier New", monospace;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+projects {
+  background-color: lightyellow;
+  font-family: "Georgia", serif;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+contact {
+  background-color: lightpink;
+  font-family: "Times New Roman", serif;
+  padding: 10px;
+  margin-bottom: 10px;
 }
