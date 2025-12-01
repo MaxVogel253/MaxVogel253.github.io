@@ -1,119 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> CSCE 190: Max Vogel</title>
-  <link rel="stylesheet" href="styles.css" />
   <title>CSCE 190: Max Vogel</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Max Vogel</h1>
-  </header>
+  <h1>Max Vogel</h1>
 
-  <main>
-    <!-- About -->
-    <section class="about">
-      <h2>About me</h2>
-      <p>
-        My mission is to build a career in cybersecurity where I can apply my technical skills, as well as work on real-world projects, ensuring the organization I work for remains safe. I will commit myself every day to learning more and more about the cybersecurity landscape. 
-      </p>
-    </section>
+  <!-- About -->
+  <div class="about">
+    <h2>About me</h2>
+    <p>
+      My mission is to build a career in cybersecurity where I can apply my technical skills, as well as work on real-world projects, ensuring the organization I work for remains safe. I will commit myself every day to learning more and more about the cybersecurity landscape.
+    </p>
+  </div>
 
-    <!-- Skills -->
-    <section class="skills">
-      <h2>Skills</h2>
-      <p>
-        Customer service &amp; client relations 
-        Teamwork &amp; communication, adaptability &amp; quick learning, problem-solving &amp; attention to detail, time management in fast-paced environments, sales &amp; negotiation experience, reliable, disciplined, and strong work ethic 
-        Programming Languages: Basic knowledge in Java, Python, and SQL  
-        Software Applications: Cisco Packet Tracer, VMWare, Metasploit (basic knowledge)   
-        Operating Systems: Windows Server, Linux (basic knowledge)  
-      </p>
-    </section>
+  <!-- Skills -->
+  <div class="skills">
+    <h2>Skills</h2>
+    <p>
+      Customer service &amp; client relations, teamwork &amp; communication, adaptability &amp; quick learning, problem-solving &amp; attention to detail, time management in fast-paced environments, sales &amp; negotiation experience, reliable, disciplined, and strong work ethic.
+      <br><br>
+      <strong>Programming Languages:</strong> Basic knowledge in Java, Python, and SQL  
+      <br>
+      <strong>Software Applications:</strong> Cisco Packet Tracer, VMWare, Metasploit (basic knowledge)  
+      <br>
+      <strong>Operating Systems:</strong> Windows Server, Linux (basic knowledge)
+    </p>
+    <span>
+      My resume: <a href="images/resume.pdf">PDF version</a> |
+      <a href="resume.html">HTML version</a>
+    </span>
+  </div>
 
-    <!-- Projects -->
-    <section class="projects">
-      <h2>Highlighted projects</h2>
+  <!-- Projects -->
+  <div class="projects">
+    <h2>Highlighted projects</h2>
 
-      <article class="project">
+    <!-- Choose Your Own Adventure -->
+    <section class="project">
+      <a href="https://github.com/MaxVogel253/codefromalgo">
         <h3>Algorithmic Design Choose Your Own Adventure</h3>
-        </a>
-        <a href="https://github.com/MaxVogel253/codefromalgo">
-        </a>
-        <p>A choose your own adventure game that I made in my Java class.</p>
-      </article>
-
-      <!-- Problem Statement Assignment -->
-      <article class="project">
-        <a href="images/Idea.pdf">
-          <h3>Problem Statement</h3>
-        </a>
-        <a href="files/statement.pdf"><img src="images/Screenshot .png" alt="Problem Statement Screenshot"></a>
-        <p>Every time I go to strom it always seems to be busy, and my workouts take forever.
-        </p>
-      </article>
-
-      <article class="project">
-        <h3>Sketches</h3>
-
-        <!-- Affinity Diagram Assignment -->
-        <section class="project">
-          <a href="images/affinitydia.pdf"><h3>Affinity Diagram</h3></a>
-          <a href="images/affinitydia.pdf"><img src="images/Affinity.png" alt="Affinity Diagram"></a>
-          <p>
-            This affinity diagram shows the thoughts and ideas that inspired me to start this project.
-          </p>
-        </section>
-
-        <!-- Display all three sketches -->
-        <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:10px;">
-          <img src="images/IMG_5291.jpeg" alt="Sketch 1" style="width:30%; max-width:300px; border:1px solid #ccc;">
-          <img src="images/IMG_5292.jpeg" alt="Sketch 2" style="width:30%; max-width:300px; border:1px solid #ccc;">
-          <img src="images/IMG_5293.jpeg" alt="Sketch 3" style="width:30%; max-width:300px; border:1px solid #ccc;">
-        </div>
-
-        <p style="margin-top:15px;">
-          I made three separate scenarios of what it looks like when you click on the different features of the app. 
-          You can also <a href="computing.pdf" target="_blank" style="color:#007acc;">view the full PDF with all three sketches here</a>.
-        </p>
-      </article>
+      </a>
+      <p>A choose your own adventure game that I made in my Java class.</p>
     </section>
 
-    <!-- Contact -->
-    <section class="contact">
-      <h2>Contact me</h2>
-      <p>Email: maxangelovogel@gmail.com</p>
+    <!-- Problem Statement -->
+    <section class="project">
+      <a href="images/Idea.pdf">
+        <h3>Problem Statement</h3>
+      </a>
+      <a href="files/statement.pdf">
+        <img src="images/Screenshot.png" alt="Problem statement screenshot">
+      </a>
+      <p>Every time I go to strom it always seems to be busy, and my workouts take forever.</p>
     </section>
 
-    <!-- Duplicate/Repeated content preserved exactly as in original -->
-    <section aria-hidden="true">
-      <p style="margin-top:15px;">
-        I made three separate scenarios of what it looks like when you click on the different features of the app. 
-        You can also <a href="computing.pdf" target="_blank" style="color:#007acc;">view the full PDF with all three sketches here</a>.
+    <!-- Affinity Diagram -->
+    <section class="project">
+      <a href="images/affinitydia.pdf">
+        <h3>Affinity Diagram</h3>
+      </a>
+      <a href="images/affinitydia.pdf">
+        <img src="images/Affinity.png" alt="Affinity diagram">
+      </a>
+      <p>
+        This affinity diagram shows the thoughts and ideas that inspired me to start this project.
       </p>
     </section>
 
-    <section class="resume">
-      <span>
-        My resume 
-        | <a href="resume.html">HTML version</a>
-      </span>
+    <!-- Sketches -->
+    <section class="project">
+      <a href="computing.pdf">
+        <h3>Sketches</h3>
+      </a>
+
+      <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+        <img src="images/IMG_5291.jpeg" alt="Sketch 1" style="width:30%; max-width:300px; border:1px solid #ccc;">
+        <img src="images/IMG_5292.jpeg" alt="Sketch 2" style="width:30%; max-width:300px; border:1px solid #ccc;">
+        <img src="images/IMG_5293.jpeg" alt="Sketch 3" style="width:30%; max-width:300px; border:1px solid #ccc;">
+      </div>
 
       <p>
-        <a href="images/resume.pdf"
-           download="resume.pdf"
-           style="display:inline-block;background:#0b66ff;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:20px;">
-          Download Resume (PDF)
-        </a>
+        I made three separate scenarios of what it looks like when you click on the different features of the app.  
+        You can also <a href="computing.pdf" target="_blank">view the full PDF with all three sketches here</a>.
       </p>
     </section>
-  </main>
 
-  <!-- Note: original had a stray closing </script> and extra </body></html> - reorganized while keeping all content -->
-  <footer>
-    <!-- kept empty footer for structure (no content changes) -->
-  </footer>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <h2>Contact me</h2>
+    <p>Email: maxangelovogel@gmail.com</p>
+  </div>
+
 </body>
 </html>
