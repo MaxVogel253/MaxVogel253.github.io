@@ -1,93 +1,159 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title> CSCE 190: Max Vogel</title>
-<link rel="stylesheet" href="styles.css">
-<title>CSCE 190: Max Vogel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Max Vogel — CSCE 190 Portfolio</title>
+  <meta name="description" content="Portfolio of Max Vogel — projects, skills, and contact information.">
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0b66ff;
+      --muted:#6b7280;
+      --radius:12px;
+      --max-width:1000px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    .site{max-width:var(--max-width);margin:36px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand h1{margin:0;font-size:1.4rem}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:18px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr} .hero aside{order:2}}
+
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+
+    .about p{color:var(--muted);margin:0}
+    .skills ul{margin:8px 0 0 16px;color:var(--muted)}
+
+    .projects .project{margin-top:12px;padding-top:12px;border-top:1px solid #eef2f7}
+    .project h3{margin:0 0 8px}
+    .project p{color:var(--muted);margin:0 0 8px}
+
+    aside .contact{display:flex;flex-direction:column;gap:12px}
+    .resume-btn{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    .sketch-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:12px}
+    .sketch-grid img{width:100%;max-width:220px;border-radius:8px;border:1px solid #e6eef9}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    a.external{color:var(--accent);font-weight:600}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+  </style>
 </head>
 <body>
-<h1>Max Vogel</h1>
-<div class="about">
-  <h2>About me</h2>
-  <p>My mission is to build a career in cybersecurity where I can apply my technical skills, as well as work on real-world projects, ensuring the organization I work for remains safe. I will commit myself every day to learning more and more about the cybersecurity landscape. 
-</p>
-</div>
-<div class="skills">
-  <h2>Skills</h2>
-  <p>Customer service & client relations 
-Teamwork & communication, adaptability & quick learning, problem-solving & attention to detail, time management in fast-paced environments, sales & negotiation experience, reliable, disciplined, and strong work ethic 
-Programming Languages: Basic knowledge in Java, Python, and SQL  
-Software Applications: Cisco Packet Tracer, VMWare, Metasploit (basic knowledge)   
-Operating Systems: Windows Server, Linux (basic knowledge)  
-</p>
-</div>
-<div class="projects">
-  <h2>Highlighted projects</h2>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <h1>Max Vogel</h1>
+        <div class="muted">CSCE 190 • Portfolio</div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <h3>Algorithmic Design Choose Your Own Adventure</h3>
-</a>
-<a href="https://github.com/MaxVogel253/codefromalgo">
-</a>
-<p>A choose your own adventure game that I made in my Java class.</p>
+    <main class="hero">
+      <section class="card about">
+        <h2>About me</h2>
+        <p>
+          I am building a career in cybersecurity with a focus on practical, hands-on projects that keep organizations safe.
+          I commit to daily learning and enjoy applying technical skills to real-world problems.
+        </p>
 
-<!-- Problem Statement Assignment -->
-<section class="project">
-<a href="images/Idea.pdf">
-<h3>Problem Statement</h3></a>
-<a href="files/statement.pdf"><img src="images/Screenshot .png"></a>
-<p>Every time I go to strom it always seems to be busy, and my workouts take forever.
-</p>
-</section>
-<section class="project">
-  <h3>Sketches</h3>
-<!--Affinity Diagram Assignment -->
-<section class="project">
-<a href="images/affinitydia.pdf"><h3>Affinity Diagram</h3></a>
-<a href="images/affinitydia.pdf"><img src="images/Affinity.png"></a>
-<p>
-This affinity diagram shows the thoughts and ideas that inspired me to start this project.
-</p>
-</section>
-  <!-- Display all three sketches -->
-  <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:10px;">
-    <img src="images/IMG_5291.jpeg" alt="Sketch 1" style="width:30%; max-width:300px; border:1px solid #ccc;">
-    <img src="images/IMG_5292.jpeg" alt="Sketch 2" style="width:30%; max-width:300px; border:1px solid #ccc;">
-    <img src="images/IMG_5293.jpeg" alt="Sketch 3" style="width:30%; max-width:300px; border:1px solid #ccc;">
+        <section id="skills" style="margin-top:16px">
+          <h2>Skills</h2>
+          <ul>
+            <li>Customer service & client relations; communication & teamwork</li>
+            <li>Adaptability, fast learning, problem solving, attention to detail</li>
+            <li>Programming (Java, Python, SQL — basic)</li>
+            <li>Tools & platforms: Cisco Packet Tracer, VMWare, Metasploit (basic)</li>
+            <li>Operating systems: Windows Server, Linux (basic)</li>
+          </ul>
+        </section>
+
+        <section id="projects" class="projects" style="margin-top:18px">
+          <h2>Highlighted projects</h2>
+
+          <div class="project">
+            <h3>Algorithmic Design — Choose Your Own Adventure</h3>
+            <p>A Java-based choose-your-own-adventure game built for my Java class.</p>
+            <p><a class="external" href="https://github.com/MaxVogel253/codefromalgo" target="_blank" rel="noopener">View on GitHub</a></p>
+          </div>
+
+          <div class="project">
+            <h3>Problem Statement (UX project)</h3>
+            <p>
+              A design brief and problem statement describing a gym/workout experience where wait times are long and the user experience can be improved.
+            </p>
+            <p>
+              <a class="external" href="images/Idea.pdf" target="_blank" rel="noopener">Open problem statement (PDF)</a>
+            </p>
+            <p style="margin-top:8px">Screenshot:</p>
+            <img src="images/Screenshot .png" alt="Problem statement screenshot" style="max-width:280px;border-radius:8px;margin-top:8px;border:1px solid #e6eef9">
+          </div>
+
+          <div class="project">
+            <h3>Affinity Diagram</h3>
+            <p>This diagram captures thoughts and ideas that inspired the project.</p>
+            <p><a class="external" href="images/affinitydia.pdf" target="_blank" rel="noopener">Open affinity diagram (PDF)</a></p>
+            <img src="images/Affinity.png" alt="Affinity diagram" style="max-width:280px;border-radius:8px;margin-top:8px;border:1px solid #e6eef9">
+          </div>
+
+          <div class="project">
+            <h3>Sketches</h3>
+            <p>I created three interface sketches showing different app feature states.</p>
+            <div class="sketch-grid" role="list">
+              <img src="images/IMG_5291.jpeg" alt="Sketch 1" role="listitem">
+              <img src="images/IMG_5292.jpeg" alt="Sketch 2" role="listitem">
+              <img src="images/IMG_5293.jpeg" alt="Sketch 3" role="listitem">
+            </div>
+            <p style="margin-top:12px"><a class="external" href="computing.pdf" target="_blank" rel="noopener">View full PDF with all three sketches</a></p>
+          </div>
+
+        </section>
+      </section>
+
+      <aside class="card">
+        <div class="contact" id="contact">
+          <h2>Contact</h2>
+          <p class="muted">Email</p>
+          <p><a href="mailto:maxangelovogel@gmail.com">maxangelovogel@gmail.com</a></p>
+
+          <h3 style="margin-top:8px">Resume</h3>
+          <p class="muted">Download a PDF or view the HTML version.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <a class="resume-btn" href="images/resume.pdf" download="Max_Vogel_Resume.pdf">Download PDF</a>
+            <a class="resume-btn" href="resume.html" style="background:#0ea5a4">Open HTML</a>
+          </div>
+
+          <h3 style="margin-top:16px">Quick links</h3>
+          <p style="margin:0"><a href="#projects">Projects</a> • <a href="#skills">Skills</a></p>
+
+          <p style="margin-top:14px;color:var(--muted);font-size:0.9rem">Available for internships and junior roles in cybersecurity.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Max Vogel — Built with attention to clarity & accessibility.</p>
+    </footer>
   </div>
 
-  <p style="margin-top:15px;">
-    I made three separate scenarios of what it looks like when you click on the different features of the app. 
-    You can also <a href="computing.pdf" target="_blank" style="color:#007acc;">view the full PDF with all three sketches here</a>.
-  </p>
-</div>
-<div class="contact">
-  <h2>Contact me</h2>
-  <p>Email: maxangelovogel@gmail.com</p>
-</div>
-</body>
-</html>
-
-
-  <p style="margin-top:15px;">
-    I made three separate scenarios of what it looks like when you click on the different features of the app. 
-    You can also <a href="computing.pdf" target="_blank" style="color:#007acc;">view the full PDF with all three sketches here</a>.
-  </p>
-</section>
-<span>
-  My resume 
-  | <a href="resume.html">HTML version</a>
-</span>
-
-<a href="images/resume.pdf"
-   download="resume.pdf"
-   style="display:inline-block;background:#0b66ff;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:20px;">
-  Download Resume (PDF)
-</a>
-
-
-
-</script>
-
-    
+  <script>
+    // small enhancement: auto-fill year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
