@@ -1,56 +1,105 @@
-.body {
-background: beige;
-font-family: Arial, Helvetica, sans-serif;
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Page */
+body {
+  background: #fff8f2;          /* soft warm background */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #10203a;
+  padding: 20px;
 }
+
+/* Title */
 h1 {
-color: coral;
-text-align: center;
-}
-h1 {
+  color: #0b66ff;               /* blue */
   text-align: center;
-  color: darkblue;
+  margin-bottom: 18px;
 }
 
-.about {
-  background-color: lightblue;
-  font-family: "Arial", sans-serif;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Section headings */
+h2 {
+  color: #ff7a18;               /* orange */
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
-.skills {
-  background-color: lightgreen;
-  font-family: "Courier New", monospace;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Cards for main blocks */
+.about, .skills, .projects, .contact {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
 }
 
+/* Project list: simple responsive row */
 .projects {
-  background-color: lightyellow;
-  font-family: "Georgia", serif;
-  padding: 10px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.contact {
-  background-color: lightpink;
-  font-family: "Times New Roman", serif;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+/* Each project: simple box */
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: white; /* pick a color */
-border-radius: 25%;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
 }
-.project img{
-width: 300px;
-height: 300px;
-margin: 10px;
-border: 2px solid rgb(126, 14, 201); /* choose a color */
-display: block;
-margin: auto;
+
+/* Small project title and text */
+.project h3 {
+  font-size: 1rem;
+  color: #0b66ff;
+  margin-bottom: 6px;
+}
+.project p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Images: scale to container */
+.project img,
+.sketch-grid img,
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 8px auto;
+  border: 1px solid #ddd;
+}
+
+/* Sketch grid (keeps inline style fallback usable) */
+.sketch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Contact block */
+.contact a {
+  color: #0b66ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Resume button (kept simple) */
+a[download] {
+  display: inline-block;
+  background: #ff7a18;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .project { max-width: 100%; }
+  body { padding: 12px; }
 }
