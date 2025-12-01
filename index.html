@@ -207,6 +207,25 @@ This affinity diagram shows the thoughts and ideas that inspired me to start thi
         </p>
       </footer>
 
+
+      <button id="downloadPdf">Download PDF</button>
+
+<script>
+document.getElementById("downloadPdf").addEventListener("click", async () => {
+    const pdfUrl = "assets/resume.pdf"; // path to your file
+
+    const response = await fetch(pdfUrl);
+    const blob = await response.blob();
+
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "resume.pdf";
+    a.click();
+
+    URL.revokeObjectURL(a.href);
+});
+</script>
+
     </div>
   </div>
 </body>
