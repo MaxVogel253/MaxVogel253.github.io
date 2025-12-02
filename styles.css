@@ -14,11 +14,11 @@ h1 {
 } 
 .projects h2 {
     /* display the h2 on its own line, not with the section blobs */
-	width: 600%;
+	width: 100%;
 }
 .project {
     /* form the section blobs */
-    width: 600%;
+    width: 30%;
     margin: 10px;
     padding: 20px 10px;
     background: lightslategray;
@@ -31,12 +31,12 @@ h1 {
 }
 .project img {
     /* adjust your image sizes as needed */
-    width: 600px;
+    width: 400px;
     height: 300px;
     margin: 10px auto;
     border: 2px solid navy;
     display: block;
-   
+    /* center the images inside the blobs */
     text-align: center;
 }
 .project p {
@@ -44,7 +44,6 @@ h1 {
     text-align: center;
     margin: 15px;
 }
-
 .about {
   background-color: lightblue;
   padding: 40px;
