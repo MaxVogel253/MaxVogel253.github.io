@@ -14,11 +14,11 @@ h1 {
 } 
 .projects h2 {
     /* display the h2 on its own line, not with the section blobs */
-	width: 100%;
+	width: 600%;
 }
 .project {
     /* form the section blobs */
-    width: 30%;
+    width: 600%;
     margin: 10px;
     padding: 20px 10px;
     background: lightslategray;
@@ -31,12 +31,12 @@ h1 {
 }
 .project img {
     /* adjust your image sizes as needed */
-    width: 400px;
+    width: 600px;
     height: 300px;
     margin: 10px auto;
     border: 2px solid navy;
     display: block;
-    /* center the images inside the blobs */
+   
     text-align: center;
 }
 .project p {
@@ -58,7 +58,9 @@ h1 {
 }
 
 .contact {
+  width: 100%;
   background-color: lightpink;
   padding: 40px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
 }
