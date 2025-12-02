@@ -58,9 +58,9 @@ h1 {
 }
 
 .contact {
-  width: 400%;
+  
   background-color: lightpink;
   padding: 40px;
-  margin-top: 40px;
-  box-sizing: border-box;
+  margin-bottom: 20px;
+
 }
