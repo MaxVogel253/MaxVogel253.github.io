@@ -3,30 +3,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Remove excessive padding from project section */
+
 .projects {
   background-color: lightyellow;
-  padding: 40px 0;           /* Smaller & cleaner */
+  padding: 40px 0;         
   margin-bottom: 30px;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;                 /* Space between boxes */
-  flex-wrap: wrap;           /* Wraps nicely on smaller screens */
+  gap: 40px;                 
+  flex-wrap: wrap;           
 }
 
-/* Smaller project boxes */
+
 .project {
   background: white;
-  width: 200px;              /* FIXED SIZE instead of % */
+  width: 200px;             
   padding: 20px;
   border-radius: 30px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Image styling */
+
 .project img {
   width: 200px;
   height: 200px;
@@ -36,12 +36,12 @@ body {
   display: block;
 }
 
-/* REMOVE this — it was pushing your layout off-center */
+
 .project:first-of-type {
   margin-left: 0;
 }
 
-/* Other sections */
+
 .about {
   background-color: lightblue;
   padding: 40px;
